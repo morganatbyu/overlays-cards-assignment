@@ -1,0 +1,222 @@
+:root {
+  --text-color: #343a40;
+
+  /* dark blue */
+  --main-color-dark: #34607d;
+
+  /* Cerulean Frost */
+  --main-color: #6096ba;
+  --main-color-light: #5f95ba;
+  --main-color-extra-light: #c4dded;
+
+  /* morning blue */
+  --highlight-color: #839788;
+
+  /* Steel Teal */
+  --teal: #5b7b7a;
+
+  /* Cornflower */
+  --cornflower: #8ecae6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--text-color);
+  font-family: "Lora", serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+  line-height: 1.2;
+  margin: 2em 0 1em;
+}
+
+h1 {
+  color: var(--main-color-dark);
+  font-size: 5rem;
+  font-weight: 1000;
+}
+
+h2,
+h3 {
+  color: var(--main-color);
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 50rem;
+  padding: 0 1rem;
+}
+
+img {
+  display:block
+  width: 100%;
+  height: auto;
+}
+
+a:link {
+  color: var(--teal);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--main-color);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:not([href]):hover {
+  text-decoration: none;
+}
+
+a:active,
+a:focus {
+  background-color: var(--teal);
+  color: #fff;
+}
+
+.button {
+  background-color: var(--main-color);
+  border-radius: 2px;
+  color: #fff;
+  display: inline-block;
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  padding: 8px 15px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.button:hover {
+  background-color: var(--main-color-light);
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+}
+
+.button:active,
+.button:focus {
+  background-color: var(--main-color-extra-light);
+  box-shadow: 0 0 0 2px var(--main-color-dark);
+  color: var(--main-color-dark);
+}
+
+.contact img {
+  width: 400px;
+}
+
+.footer {
+  background-color: var(--main-color);
+  color: #fff;
+  font-family: "Lora", serif;
+  font-size: 2em;
+  margin-top: 12rem;
+  padding: 12rem 1rem 2rem;
+}
+
+a:link {
+  color: var(--teal);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:visited {
+  color: var(--teal);
+}
+a:hover {
+  text-decoration: underline;
+}
+
+a:not([href]):hover {
+  text-decoration: none;
+}
+
+a:focus {
+  background-color: var(--teal);
+  color: #fff;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.hero {
+  position: relative;
+}
+.hero .overlay {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), transparent 70%);
+}
+.hero .text-group {
+  /* flex box will make centering easier. This is just a fix using position */
+  position: absolute;
+  top: 40%;
+  text-align: center;
+  width: 100%;
+  padding: 0 2rem;
+}
+.hero h1 {
+  margin: 0;
+  color: #fff;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
+}
+.hero p {
+  font-family: "Fira Sans", sans-serif;
+  color: #fff;
+  font-size: 1.8rem;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.cards {
+  display: flex;
+  gap: 1rem;
+  margin: 12rem 1.5rem 0 1.5rem;
+}
+
+.cards span {
+  display: block;
+}
+
+.card {
+  position: relative;
+}
+
+.card .overlay {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-size: 1.8rem;
+  line-height: 1.1;
+  padding: 20% 1rem 0;
+  margin: 0;
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}

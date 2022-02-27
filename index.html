@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="Styles/main.css">
+  <link rel="stylesheet" href="./Styles/main.css">
 
 </head>
 
@@ -35,7 +35,7 @@
       <source srcset="images/grand-canyon-sunset-900w.jpg" media="(min-width: 501px)">
       <source srcset="images/grand-canyon-sunset-500w.jpg" media="(max-width: 500px)">
 
-      <img src="images/grand-canyon-sunset-900w.jpg" alt="grand canyon at sunset">
+      <img src="images/grand-canyon-sunset-900w.jpg" alt="grand canyon at sunset" width="100%">
     </picture>
     <div class="overlay">
       <div class="text group">
@@ -72,75 +72,45 @@
   </main>
 
   <div class="cards">
-    <a>
-      <span class="card">
-        <span class="image-wrapper">
-          <img src="images/card-1-everest-400w.jpg" alt="Everest at Dusk">
-        </span>
-        <span class="overlay">
-          <div class="card">
-            <a>
+    <div class="card">
+      <a>
+        <img src="images/card-1-everest-400w.jpg" width="400" height="400" loading="lazy" alt="Everest at Dusk">
+        <p class="overlay">
+          Mount Everest
+        </p>
+      </a>
+    </div>
 
-              <img src="images/card-1-everest-400w.jpg" width="400" height="400" loading="lazy" alt="Everest at Dusk">
-              <p class="overlay">
-                Mount Everest
-        </span>
-      </span>
-    </a>
-    <a>
-      <span class="card">
-        <span class="image-wrapper">
-          <img src="images/card-2-lights-400w.jpg" alt="Northern Lights">
-        </span>
-        <span class="overlay">
-          </p>
-    </a>
-  </div>
-  <div class="card">
-    <a>
-      <img src="images/card-2-lights-400w.jpg" width="400" height="400" loading="lazy" alt="Northern Lights">
-      <p class="overlay">
-        Northern Lights
-        </span>
-        </span>
-    </a>
-    <a>
-      <span class="card">
-        <span class="image-wrapper">
-          <img src="images/card-3-volcano-400w.jpg" alt="volcano in south america">
-        </span>
-        <span class="overlay">
-          </p>
-    </a>
-  </div>
-  <div class="card">
-    <a>
-      <img src="images/card-3-volcano-400w.jpg" width="400" height="400" loading="lazy" alt="Volcano in Mexico">
-      <p class="overlay">
-        Volcano in Mexico
-        </span>
-        </span>
-    </a>
-    <a>
-      <span class="card">
-        <span class="image-wrapper">
-          <img src="images/card-4-waterfall-400w.jpg" alt="Victoria Falls">
-        </span>
-        <span class="overlay">
-          </p>
-    </a>
-  </div>
-  <div class="card">
-    <a>
-      <img src="images/card-4-waterfall-400w.jpg" width="400" height="400" loading="lazy" alt="Victoria Falls">
-      <p class="overlay">
-        Victoria Falls
-        </span>
-        </span>
-    </a>
-    </p>
-    </a>
-  </div>
+    <div class="card">
+      <a>
+        <img src="images/card-2-lights-400w.jpg" width="400" height="400" loading="lazy" alt="Northern Lights">
+        <p class="overlay">
+          Northern Lights
+        </p>
+      </a>
+    </div>
+
+
+    <div class="card">
+      <a>
+        <img src="images/card-3-volcano-400w.jpg" width="400" height="400" loading="lazy" alt="Volcano in Mexico">
+        <p class="overlay">
+          Volcano
+        </p>
+
+      </a>
+    </div>
+
+    <div class="card">
+      <a>
+        <img src="images/card-4-waterfall-400w.jpg" width="400" height="400" loading="lazy" alt="Victoria Falls">
+        <p class="overlay">
+          Waterfall
+        </p>
+
+      </a>
+    </div>
+
   </div>
 
 
